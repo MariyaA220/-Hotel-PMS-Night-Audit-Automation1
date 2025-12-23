@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "62e3bb25-2658-4797-8316-4420c405bbc7",
+		"name": "NA Companies Runner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34007375"
+	},
+	"item": [
+		{
+			"name": "NA Runner",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-US,en;q=0.9"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer eyJraWQiOiJZUk1qVVVycitEUk44M3ZzQ3JLZWtzb2lEYnZEanlCc1U0TWN3TGxabnNzPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI4MTFmY2ZkOC1hMGY4LTQ3ZjctYmI1Ny1iZGNiODRjZDA2ZTgiLCJjb2duaXRvOmdyb3VwcyI6WyJ1cy13ZXN0LTJfQUpaUXh1b1dUX0dvb2dsZSJdLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtd2VzdC0yLmFtYXpvbmF3cy5jb21cL3VzLXdlc3QtMl9BSlpReHVvV1QiLCJ2ZXJzaW9uIjoyLCJjbGllbnRfaWQiOiI3bDhzZDI0ZzhnZ2M0bGU2NzZmMHI1NGpoYyIsIm9yaWdpbl9qdGkiOiJjZDY3OGYxNS1jYjhlLTQ5YTItOTc2NS0xN2IxNWM2Njg1MzYiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIG9wZW5pZCBlbWFpbCIsImF1dGhfdGltZSI6MTc0ODM2NzY2MSwiZXhwIjoxNzQ4Mzk2MTE4LCJpYXQiOjE3NDgzODE3MTgsImp0aSI6IjE1MzlhOWFhLTg3ZjctNDc0NC1iZDRhLWZhNDQ3YzM2YWM4MCIsInVzZXJuYW1lIjoiR29vZ2xlXzEwMTA1ODYwMzE2MzA3ODA0MTM2NCJ9.NMkRg4crCt-qJh_UL3P3-rbdXYWmbl_Mt7ItKL6M81UHwxSwDEnvjGjGligTh87SH3hSAMNDHlUduDiJCQ0QjtHyMcLexrQ2L1VWRFtUQX0eSk6cMtPnB9i0nYYbv6_GZUo-8TJzO91JZ5XJebonlXk8-b2_MDPZNaAZlH5xnpvL0mGVM5nUXykDS9MUWKblFCy8kJClbjzfogpxhds1bQw5lr47228RWJm6bLF-z65E_wLjoZBhIt-sRBetQmiSMeQMLcE-Y13zBV3sew9FnbVf4C_1oz6hmy_1GlI99wWdgECIOTJV0t63dHW-p99lViId_LdJUQRR_OfQfZLRlw"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "hk-app-id",
+						"value": "HK_COMPANIES"
+					},
+					{
+						"key": "hk-app-version",
+						"value": "4.5.2"
+					},
+					{
+						"key": "hk-info",
+						"value": "TW96aWxsYS81LjAgKE1hY2ludG9zaDsgSW50ZWwgTWFjIE9TIFggMTBfMTVfNykgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEzNi4wLjAuMCBTYWZhcmkvNTM3LjM2OkFETUlOOjAuOS4xOmRpdnlhLmJhdHJhQGhvdGVsa2V5YXBwLmNvbToxNzQ4Mzg0MjU5MTYwOjo6Og=="
+					},
+					{
+						"key": "origin",
+						"value": "https://train.ihg.hotelkeyapp.com"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "https://train.ihg.hotelkeyapp.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Chromium\";v=\"124\", \"Google Chrome\";v=\"124\", \"Not-A.Brand\";v=\"99\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"{{company_name}}\",\n    \"code\": \"{{company_code}}\",\n    \"address\": \"{{address}}\",\n    \"city\": \"{{city}}\",\n    \"state\": null,\n    \"postal\": \"{{postal}}\",\n    \"country\": \"{{country}}\",\n    \"fax\": null,\n    \"phone\": null,\n    \"email\": null,\n    \"website\": null,\n    \"status\": \"ACTIVE\",\n    \"payment_term\": \"UPON RECEIPT\",\n    \"employment_verification_required\": false,\n    \"company_account_type_id\": null,\n    \"po_number_required\": 0,\n    \"po_number_required_at_booking\": false,\n    \"use_company_payment_source_on_reservation\": false,\n    \"allow_extension\": false,\n    \"payment_term_days\": 7,\n    \"tax_id\": null,\n    \"paperwork_required\": false,\n    \"no_show_charge_nights\": 1,\n    \"tax_exempt\": false,\n    \"tax_exempt_code\": null,\n    \"instructions\": null,\n    \"company_pays\": 1,\n    \"allowed_direct_property_booking\": true,\n    \"credit_monitoring\": false,\n    \"attach_folio_to_invoice\": true,\n    \"auto_direct_bill_payment_days\": 1,\n    \"credit_limit\": null,\n    \"company_payment_sourcse\": [],\n    \"company_documents\": [],\n    \"company_payment_options\": \"HOTEL_COLLECT\",\n    \"balance\": 0,\n    \"local_tracking\": true,\n    \"type\": \"LOCAL\"\n}"
+				},
+				"url": {
+					"raw": "https://00.us-west-2.na.ihg.hkclients.com/v4/ihg/properties/2be38df4-8082-4a98-a598-9f656026ad8d/companies",
+					"protocol": "https",
+					"host": [
+						"00",
+						"us-west-2",
+						"na",
+						"ihg",
+						"hkclients",
+						"com"
+					],
+					"path": [
+						"v4",
+						"ihg",
+						"properties",
+						"2be38df4-8082-4a98-a598-9f656026ad8d",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
